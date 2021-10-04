@@ -114,6 +114,12 @@ body {
         letter-spacing: 1px;
         cursor: pointer;
     }
+    .search-controller button:hover {
+        opacity: 0.9;
+    }
+    .search-controller button:active {
+        transform: scale(0.98);
+    }
     .app-main {
         background-color: var(--bg-app);
         padding: 30px;
