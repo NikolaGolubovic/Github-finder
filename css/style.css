@@ -216,8 +216,16 @@ body {
 }
 
 @media (min-width: 768px) {
+    .container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        ;
+    }
     .app {
         width: 80%;
+        position: relative;
+        top: -50px;
     }
     .infos-social {
         flex-direction: row;
