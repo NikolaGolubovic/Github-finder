@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Github Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <main class="app">
+        <div class="app-top">
+          <div class="logo-theme">
+            <div class="logo-name">devfinder</div>
+            <div class="theme-change">
+              <p>Dark</p>
+              <img src="assets/icon-moon.svg" alt="Theme Icon" />
+            </div>
+          </div>
+          <div class="search-controller">
+            <label for="">
+              <input
+                type="text"
+                name="search"
+                placeholder="Search GitHub username..."
+              />
+              <p class="error-msg"></p>
+              <button>Search</button>
+            </label>
+          </div>
+        </div>
+        <div class="app-main">
+          <div class="user-basic-avatar outside"><img src="" alt="" /></div>
+          <div class="wrapper-for-larger-resolutions">
+            <div class="user-basic-info">
+              <div class="user-basic-avatar inside"><img src="" alt="" /></div>
+              <div class="user-basic-desc">
+                <div class="user-basic-desc-name-mail">
+                  <p class="user-basic__name"></p>
+                  <p class="user-basic__login"></p>
+                </div>
+                <div class="user-date">
+                  <p class="user-date-join">Joined <span></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="user-bio">
+              <p></p>
+            </div>
+            <div class="user-stats">
+              <div class="user-stats__repo">
+                <div class="user-stats__name">
+                  <p>Repos</p>
+                </div>
+                <div class="user-stats__number">
+                  <p></p>
+                </div>
+              </div>
+              <div class="user-stats__followers">
+                <div class="user-stats__name">
+                  <p>Followers</p>
+                </div>
+                <div class="user-stats__number">
+                  <p></p>
+                </div>
+              </div>
+              <div class="user-stats__following">
+                <div class="user-stats__name">
+                  <p>Following</p>
+                </div>
+                <div class="user-stats__number">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="infos-social">
+              <div class="social-tab-location">
+                <img src="assets/icon-location.svg" alt="" />
+                <p class="social-tab-text"></p>
+              </div>
+              <div class="social-tab-website">
+                <img src="assets/icon-website.svg" alt="" />
+                <a class="social-tab-text" href="#"></a>
+              </div>
+              <div class="social-tab-twitter">
+                <img src="assets/icon-twitter.svg" alt="" />
+                <a class="social-tab-text" href="#"></a>
+              </div>
+              <div class="social-tab-company">
+                <img src="assets/icon-company.svg" alt="" />
+                <a class="social-tab-text" href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
