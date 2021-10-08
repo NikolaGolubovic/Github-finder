@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
 }
 
 html[data-theme="light"] {
@@ -63,6 +64,14 @@ body {
         display: flex;
         align-items: center;
         cursor: pointer;
+        padding: 5px;
+        border-bottom: 1px solid transparent;
+    }
+    .theme-change:hover p {
+        color: var(--color-main);
+    }
+    .theme-change:active {
+        border: none;
     }
     .theme-change p {
         text-transform: uppercase;
@@ -79,14 +88,18 @@ body {
     }
     .search-controller label input {
         background: url("../assets/icon-search.svg") no-repeat;
-        background-position: 15px 16px;
+        background-position: 15px 22px;
         background-size: 20px 20px;
         background-color: var(--bg-app);
         width: 100%;
-        border-radius: 30px;
-        padding: 20px 45px;
+        border-radius: 10px;
+        padding: 22px 45px;
         border: none;
         color: var(--color-main);
+        filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.1));
+    }
+    input:focus {
+        outline: none;
     }
     .search-controller label input::placeholder {
         font-size: 1rem;
@@ -95,9 +108,10 @@ body {
     }
     .error-msg {
         color: red;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+        font-weight: bold;
         position: absolute;
-        right: 120px;
+        right: 150px;
         top: 5px;
     }
     .search-controller button {
@@ -108,11 +122,17 @@ body {
         border: none;
         color: white;
         background-color: var(--blue);
-        padding: 14px 20px;
+        padding: 12px 15px;
         font-size: 0.95rem;
         font-style: italic;
         letter-spacing: 1px;
         cursor: pointer;
+    }
+    .search-controller button:hover {
+        opacity: 0.8;
+    }
+    .search-controller button:active {
+        transform: scale(0.98);
     }
     .app-main {
         background-color: var(--bg-app);
@@ -207,11 +227,29 @@ body {
         color: var(--color-main);
         text-decoration: none;
     }
+    div[class^="social-tab"]:hover a[href] {
+        color: var(--blue);
+    }
+    a[href]:active {
+        text-decoration: underline;
+        transform: scale(0.99);
+    }
+    a[href]:visited {
+        color: maroon;
+    }
 }
 
 @media (min-width: 768px) {
+    .container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        ;
+    }
     .app {
         width: 80%;
+        position: relative;
+        top: -50px;
     }
     .infos-social {
         flex-direction: row;
@@ -220,8 +258,11 @@ body {
     div[class^="social-tab"] {
         flex-basis: 45%;
     }
+    .user-stats {
+        padding: 0 30px;
+    }
     .user-stats>* {
-        align-items: space-around;
+        align-items: flex-start;
     }
 }
 
